@@ -11,7 +11,7 @@ first_power_str = input("First term, " + base + " is raised to what power? ")
 # Collect the second exponent
 second_power_str = input("Second term, " + base + " is raised to what power? ")
 
-# output a blacnk line
+# output a blank line
 print()
 
 # convert exponents to integers
