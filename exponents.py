@@ -1,12 +1,24 @@
 def exponent(value):
     # converts an integer number to superscript string
+    value_str = str(value)
+    superscripts = {
+        u"0": u"\u2070",
+        u"1": u"\u00b9",
+        u"2": u"\u00b2",
+        u"3": u"\u00b3",
+        u"4": u"\u2074",
+        u"5": u"\u2075",
+        u"6": u"\u2076",
+        u"7": u"\u2077",
+        u"8": u"\u2078",
+        u"9": u"\u2079",
+        u"+": u"\u207A",
+        u"-": u"\u207B",
+    }
 
     if isinstance(value, int) is True:
-        SUPER_SCRIPT = str.maketrans(
-            "0123456789+-",
-            "\u2070\u00b9\u00b2\u00b3\u2074\u2075\u2076\u2077\u2078\u2079\u207A\u207B",
+        return "".join(
+            [superscripts[loop_counter] for loop_counter in value_str]
         )
-
-        return str(value).translate(SUPER_SCRIPT)
     else:
         print("Oops!!  That was no valid integer.")
