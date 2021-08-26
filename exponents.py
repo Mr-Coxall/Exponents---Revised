@@ -17,8 +17,6 @@ def exponent(value):
     }
 
     if isinstance(value, int) is True:
-        return "".join(
-            [superscripts[loop_counter] for loop_counter in value_str]
-        )
+        return "".join([superscripts[loop_counter] for loop_counter in value_str])
     else:
         print("Oops!!  That was no valid integer.")
