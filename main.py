@@ -1,22 +1,22 @@
 # This will work for user input exponents both positive and negative integers
 
-from exponents import *
+from exponents import exponent
 
 # Collect the base value
 base = input("What is the common base? ")
 
 # Collect the first exponent
-first_power = input("First term, " + base + " is raised to what power? ")
+first_power_str = input("First term, " + base + " is raised to what power? ")
 
 # Collect the second exponent
-second_power = input("Second term, " + base + " is raised to what power? ")
+second_power_str = input("Second term, " + base + " is raised to what power? ")
 
 # output a blacnk line
 print()
 
 # convert exponents to integers
-first_power = int(first_power)
-second_power = int(second_power)
+first_power = int(first_power_str)
+second_power = int(second_power_str)
 
 # Add the exponents
 power_sum = first_power + second_power
