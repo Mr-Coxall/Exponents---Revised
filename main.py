@@ -27,12 +27,12 @@ result = ""
 for loop_counter in range(0, power_sum):
     # If it's not the last one, add multiplication sign
     if loop_counter < power_sum - 1:
-        result = result + base + " · "
+        result = result + base + " * "
     else:
         result = result + base  # for last one, no sign
 
 # Store the original problem
-problem = base + exponent(first_power) + " · " + base + exponent(second_power)
+problem = base + exponent(first_power) + " * " + base + exponent(second_power)
 # Store the final solution
 solution = str(base + exponent(power_sum))
 
